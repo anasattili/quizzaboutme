@@ -1,0 +1,100 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background: #fff;
+    color: #333;
+    font-family: 'Ubuntu', sans-serif, monospace;
+    position: relative;
+}
+
+header {
+    background-color: #4b6b95;
+    color: #fff;
+    height: 90px;
+    padding-top: 1vw;
+    padding-bottom: 0vw;
+}
+
+header h1 {
+    text-align: left;
+    text-decoration: none;
+    padding: 10px 0px 0px 40px;
+    font-size: 35px;
+}
+
+header h1 a {
+    color: white;
+    text-decoration: none;
+}
+
+nav {
+    margin-bottom: vw;
+}
+
+nav ul {
+    text-align: right;
+    padding-top: 17px;
+}
+
+nav ul li {
+    display: inline;
+    padding: 0px 30px 0px 0px;
+}
+
+nav ul li a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    background-color: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    padding: 10vh 0 80vh;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+#section1 {
+    background-color: #4b6b95;
+    color: #fff;
+    position: relative;
+    text-align: left;
+    height: 320px;
+    width: 21%;
+    margin-left: 39.5%;
+}
+
+#carrer {
+    text-align: center;
+    font-size: 20px;
+    margin: -43px;
+}
+
+#myimg {
+    width: 250px;
+    height: 250px;
+    padding: 15px 75px 55px 75px;
+}
+
+#bio {
+    background-color: ;
+    text-align: center;
+    background-color: #fff;
+    height: 300px;
+    width: 400px;
+    margin: 25px 0px 0px 39.5%;
+    font-size: 20px;
+}
+
+footer {
+    background: #4b6b95;
+    color: #fff;
+    padding: 3vh 0;
+    text-align: center;
+    position: relative;
+}
