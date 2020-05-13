@@ -27,7 +27,7 @@ if (answer1.toLowerCase() === 'yes' || answer1.toLowerCase() === 'y') {
     sumco = sumco + 1;
 } else {
     alert('really 😒😒 i said "yes" or "no" ');
-    sumnon = sumnon + 1;
+    sumwr = sumwr + 1;
 }
 
 /* question num (2)*/
@@ -43,7 +43,7 @@ if (answer2.toLowerCase() === 'yes' || answer2.toLowerCase() === 'y') {
     sumwr = sumwr + 1;
 } else {
     alert('really 😒😒 i said "yes" or "no" ');
-    sumnon = sumnon + 1;
+    sumwr = sumwr + 1;
 
 }
 
@@ -66,7 +66,7 @@ switch (answer3.toLowerCase()) {
         break;
     default:
         alert('really 😒😒 i said "yes" or "no" ');
-        sumnon = sumnon + 1;
+        sumwr = sumwr + 1;
 
 }
 
@@ -84,7 +84,7 @@ if (answer4.toLowerCase() === 'yes' || answer4.toLowerCase() === 'y') {
 
 } else {
     alert('really 😒😒 i said "yes" or "no" ');
-    sumnon = sumnon + 1;
+    sumwr = sumwr + 1;
 
 }
 
@@ -102,7 +102,7 @@ if (answer5.toLowerCase() === 'yes' || answer5.toLowerCase() === 'y') {
 
 } else {
     alert('really 😒😒 i said "yes" or "no" ');
-    sumnon = sumnon + 1;
+    sumwr = sumwr + 1;
 
 }
 
@@ -137,7 +137,7 @@ if (numHours < 5 || numHours > 5) {
 
 /* question num (7)*/
 
-var footballPlayer = ['messi', 'puyol', 'muller']
+var footballPlayer = ['messi', 'puyol', 'muller'];
 
 var playerAnswer = prompt('In the world of football I encourage three players, can you guess one of them?"you have six efforts"');
 var q = 0;
@@ -166,7 +166,15 @@ switch (playerAnswer.toLowerCase()) {
 
 
     default:
+        alert('SOORY it\'s not from top three for me, keep try');
         sumwr = sumwr + 1;
+}
+
+/* correct answer for question (7)*/
+
+alert('my best three player are:')
+for (var ca = 0; ca < footballPlayer.length; ca++) {
+    alert(ca + 1 + '-' + footballPlayer[ca])
 }
 
 /* result alert */
