@@ -15,7 +15,7 @@ var sumwr = 0;
 var sumnon = 0;
 
 /* question num (1)*/
-
+function qn1(){
 var answer1 = prompt('My Middle name is \'Bsaam\'?', 'Yes or No');
 if (answer1.toLowerCase() === 'yes' || answer1.toLowerCase() === 'y') {
     alert('wrong answer ❌ ');
@@ -29,9 +29,11 @@ if (answer1.toLowerCase() === 'yes' || answer1.toLowerCase() === 'y') {
     alert('really 😒😒 i said "yes" or "no" ');
     sumwr = sumwr + 1;
 }
+}
 
+qn1();
 /* question num (2)*/
-
+function qn2(){
 var answer2 = prompt('Am I a coffee addict? ', ' Yes or No');
 if (answer2.toLowerCase() === 'yes' || answer2.toLowerCase() === 'y') {
     alert('correct answer ✔ ☑️');
@@ -46,9 +48,10 @@ if (answer2.toLowerCase() === 'yes' || answer2.toLowerCase() === 'y') {
     sumwr = sumwr + 1;
 
 }
-
+}
+qn2();
 /* question num (3)*/
-
+function qn3(){
 var answer3 = prompt('Do you think that I am over 22 years old?', 'Yes or No');
 switch (answer3.toLowerCase()) {
     case 'yes':
@@ -69,9 +72,10 @@ switch (answer3.toLowerCase()) {
         sumwr = sumwr + 1;
 
 }
-
+}
+qn3();
 /* question num (4)*/
-
+function qn4(){
 var answer4 = prompt('Do you think I finished my bachelor\'s degree?', 'Yes or No');
 if (answer4.toLowerCase() === 'yes' || answer4.toLowerCase() === 'y') {
     alert('wrong answer ❌ ');
@@ -87,9 +91,10 @@ if (answer4.toLowerCase() === 'yes' || answer4.toLowerCase() === 'y') {
     sumwr = sumwr + 1;
 
 }
-
+}
+qn4();
 /* question num (5)*/
-
+function qn5(){
 var answer5 = prompt('Do you think I have Coronavers?', 'Yes or No');
 if (answer5.toLowerCase() === 'yes' || answer5.toLowerCase() === 'y') {
     alert('wrong answer ❌ ');
@@ -105,10 +110,10 @@ if (answer5.toLowerCase() === 'yes' || answer5.toLowerCase() === 'y') {
     sumwr = sumwr + 1;
 
 }
-
-
+}
+qn5();
 /* question num (6)*/
-
+function qn6(){
 for (i = 0; i <= 3; i++) {
     
     numHours = prompt('How many hours a day do you think I sleep?');
@@ -130,9 +135,10 @@ if (numHours < 5 || numHours > 5) {
     alert('i sleep 5 hours only');
     sumwr = sumwr + 1;;
 }
-
+}
+qn6();
 /* question num (7)*/
-
+function qn7(){
 var footballPlayer = ['messi', 'puyol', 'muller'];
 
 var playerAnswer = prompt('In the world of football I encourage three players, can you guess one of them?"you have six efforts"');
@@ -165,13 +171,14 @@ switch (playerAnswer.toLowerCase()) {
         alert('SOORY it\'s not from top three for me, keep try');
         sumwr = sumwr + 1;
 }
-
+}
+qn7();
 /* correct answer for question (7)*/
 
-alert('my best three player are:')
-for (var ca = 0; ca < footballPlayer.length; ca++) {
-    alert(ca + 1 + '-' + footballPlayer[ca])
-}
+//alert('my best three player are:')
+//for (var ca = 0; ca < footballPlayer.length; ca++) {
+    //alert(ca + 1 + '-' + footballPlayer[ca])
+//}
 
 /* result alert */
 alert(`thank you for take the quiz "${userName}" this is the result of your quiz: correct answers are "${sumco}" answers, and wrong answers are "${sumwr}"`);
