@@ -109,22 +109,18 @@ if (answer5.toLowerCase() === 'yes' || answer5.toLowerCase() === 'y') {
 
 /* question num (6)*/
 
-var numHours = prompt('How many hours a day do you think I sleep? "you have four efforts"');
-
-for (i = 0; i < 3; i++) {
-
-    if (numHours < 5) {
-        alert('No this is too little, try with greater number');
-        numHours = prompt('How many hours a day do you think I sleep?');
-    } else if (numHours > 5) {
-        alert('No this is too big, try with smaller number');
-        numHours = prompt('How many hours a day do you think I sleep?');
-    } else if (numHours == 5) {
+for (i = 0; i <= 3; i++) {
+    
+    numHours = prompt('How many hours a day do you think I sleep?');
+    if (numHours == 5) {
         alert('Bingo, you are get the right answer');
         sumco = sumco + 1;
         break;
+    } else if (numHours > 5) {
+        alert('No this is too big, try with smaller number');
+    } else if (numHours < 5) {
+        alert('No this is too little, try with greater number');
     } else {
-        numHours = prompt('How many hours a day do you think I sleep?');
         alert('your anser not a number');
     }
 
@@ -179,3 +175,24 @@ for (var ca = 0; ca < footballPlayer.length; ca++) {
 
 /* result alert */
 alert(`thank you for take the quiz "${userName}" this is the result of your quiz: correct answers are "${sumco}" answers, and wrong answers are "${sumwr}"`);
+
+
+
+/* test a new way question 7 */
+// var favColor = ['black','white','gray'];
+// var gues7 = false;
+// var tray7 = 0;
+// while(tray7 <6){
+//     var answer7=prompt('i like 3 colors,gues one of them?') ;
+//     for (var qu7 = 0; qu7 < favColor.length; qu7++) {
+//         if (answer7 == favcolor[qu7]){
+//             alert('bingo, correct answer');
+//             gues7=true;
+//             break;
+//         }
+//     }
+//     if(gues7){
+//         break;
+//     }
+//     tray7++
+// }
