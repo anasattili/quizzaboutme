@@ -129,12 +129,10 @@ for (i = 0; i < 3; i++) {
     }
 
 }
-while (numHours !== 5) {
+if (numHours < 5 || numHours > 5) {
 
     alert('i sleep 5 hours only');
-    sumwr = sumwr + 1;
-    break;
-    you
+    sumwr = sumwr + 1;;
 }
 
 /* question num (7)*/
